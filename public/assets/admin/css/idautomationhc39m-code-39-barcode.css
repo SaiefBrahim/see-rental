@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'IDAHC39MCode39BarcodeRegular';
+    src: url('/IDAHC39MCode39BarcodeRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* The following rules are deprecated. */
+
+@font-face {
+    font-family: 'IDAHC39M Code 39 Barcode';
+    src: url('/IDAHC39MCode39BarcodeRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

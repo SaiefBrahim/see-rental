@@ -1,0 +1,465 @@
+@media (max-width: 1440px) {
+  .formify_box_register {
+    padding: 40px;
+  }
+  .divider_border {
+    margin: 20px 0 10px;
+  }
+  .formify_signup_fullwidth_two .or-text {
+    margin-bottom: 0;
+  }
+  .formify_signup_fullwidth_two
+    .formify_right_fullwidth
+    .formify_box
+    .signup_form
+    .form-group {
+    margin-top: 18px;
+  }
+  .formify_signup_fullwidth_two
+    .formify_right_fullwidth
+    .formify_box
+    .condition_text {
+    margin-top: 20px;
+  }
+  .formify_signup_fullwidth_two
+    .formify_right_fullwidth
+    .formify_box
+    .signup_form
+    .form-group
+    .thm_btn {
+    margin-top: 0;
+  }
+  .header_top {
+    padding: 30px;
+  }
+  .formify_box_four .formify_content_right .formify_box {
+    padding: 80px 0px;
+  }
+  .formify_signup_fullwidth_two
+    .formify_right_fullwidth
+    .formify_box.formify_countdown {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1366px) {
+  .or-text {
+    margin: 15px 0px 5px;
+  }
+  .signup_form .form-group {
+    margin-bottom: 0;
+  }
+  .header_top {
+    padding: 30px 100px 30px 30px;
+  }
+  .formify_login_two .formify_header,
+  .formify_form_tab .formify_header {
+    margin-bottom: 20px;
+  }
+  .formify_login_two .signup_form .form-group:not(:first-child) {
+    margin-top: 13px;
+  }
+  .formify_box_three {
+    margin: 1rem auto;
+  }
+  .formify_form_tab.formify_login .formify_content_right .formify_box {
+    padding: 30px;
+  }
+  .form_tab {
+    margin-bottom: 16px;
+  }
+  .formify_form_tab .or-text {
+    margin-top: 5px;
+  }
+  .formify_form_tab .signup_form .form-group:not(:first-child) {
+    margin-top: 18px;
+  }
+  .formify_form_tab .thm_btn {
+    margin-top: 0;
+  }
+  .formify_form_tab .tab-content {
+    min-height: 375px;
+  }
+  .formify_right_fullwidth .form_title {
+    margin-bottom: 25px;
+  }
+  .formify_signup_fullwidth_two .formify_right_fullwidth .formify_box {
+    padding-top: 70px;
+  }
+  .formify_box_register .formify_header {
+    margin-bottom: 20px;
+  }
+  .formify_box_register .btn-social + .btn-social {
+    margin-top: 10px;
+  }
+  .formify_box_register .divider_border {
+    margin: 10px 0 6px;
+  }
+  .condition_text {
+    margin-top: 15px;
+  }
+  .formify_box_four {
+    max-width: auto;
+  }
+  .formify_box_four .formify_content_left .content {
+    padding: 40px 0px 0;
+  }
+  .formify_box_four .formify_content_left .content h5 {
+    margin-bottom: 8px;
+  }
+  .formify_box_four .formify_content_left .content h3 {
+    margin-bottom: 10px;
+  }
+  .formify_box_four .formify_content_left .content .thm_btn {
+    margin-top: 15px;
+  }
+  .formify_box_four .formify_content_right .formify_box {
+    padding: 20px 50px;
+  }
+  .formify_box_four .formify_content_left {
+    padding: 25px 15px;
+  }
+  .formify_box_four .formify_content_left .content.quote_text {
+    inset-inline-start: 0;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+  .formify_box_checkbox {
+    max-width: 500px;
+    padding: 32px 50px;
+  }
+  .formify_box_checkbox .formify_header {
+    margin-bottom: 30px;
+  }
+  .formify_box_checkbox .next_tab {
+    margin-top: 12px;
+  }
+  .formify_cloud_box {
+    padding: 25px 30px 15px;
+  }
+  .formify_cloud_box .signup_form .form-group {
+    margin-bottom: 12px;
+  }
+  .formify_contact_box.formify_login .formify_content_right .formify_box,
+  .formify_contact_box.formify_login .formify_content_left {
+    padding: 30px 45px;
+  }
+  .formify_contact_box.formify_login
+    .formify_content_right
+    .formify_box
+    .signup_form
+    .form-group:not(:first-child) {
+    margin-top: 18px;
+  }
+  .formify_contact_box .signup_form .form-group .top_text {
+    bottom: -4px;
+  }
+  .formify_signup_fullwidth_two .form_tab_two .form_tab {
+    margin-bottom: 10px;
+  }
+  .formify_signup_fullwidth_two .form_tab_two .formify_box .form_title {
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+  .formify_signup_fullwidth_two .form_tab_two .formify_box {
+    padding-top: 0;
+  }
+  .formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link span {
+    margin-bottom: 5px;
+  }
+  .page-23 .f_content {
+    max-width: 100%;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .formify_box {
+    padding: 40px;
+  }
+  .formify_box_two .divider_border {
+    margin: 12px 0px;
+  }
+  .header_top {
+    padding: 20px;
+  }
+  .formify_right_fullwidth .formify_content_body {
+    margin-inline-start: 0;
+  }
+  .formify_box_three {
+    max-width: 960px;
+  }
+  .formify_login .formify_content_left,
+  .formify_login .formify_content_right .formify_box {
+    padding: 30px;
+  }
+  .formify_box_register_three {
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+  }
+  .formify_cloud_box {
+    padding: 25px 30px 15px;
+  }
+  .formify_address_content img,
+  .img_p_23 {
+    max-width: 100%;
+  }
+  .formify_signup_fullwidth_two .form_tab_two .formify_box {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .formify_box_three {
+    max-width: 720px;
+    width: auto;
+  }
+  .formify_login .formify_content_left .formify_logo_wrapper p br,
+  .formify_signup_fullwidth_two.formify_countdown_inner .formify_left_top_logo {
+    display: none !important;
+  }
+  .formify_login_two .formify_content_left .formify_box,
+  .formify_login_two .formify_content_right .formify_box {
+    margin: 0px auto;
+  }
+  .formify_form_tab .formify_content_right {
+    flex: 0 0 53%;
+    max-width: 53%;
+  }
+  .formify_form_tab .formify_content_left {
+    flex: 0 0 47%;
+    max-width: 47%;
+  }
+  .formify_signup_fullwidth_two {
+    flex-wrap: wrap;
+  }
+  .formify_signup_fullwidth_two .formify_left_fullwidth,
+  .formify_signup_fullwidth_two .formify_right_fullwidth {
+    width: 100%;
+  }
+  .formify_signup_fullwidth_two .formify_right_fullwidth .formify_box {
+    padding: 20px 0px;
+  }
+  .formify_box_four .formify_content_left {
+    background-position: center center !important;
+    height: 500px;
+  }
+  .formify_box_four .formify_content_right .formify_box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .formify_box_four .formify_content_left .content.quote_text {
+    inset-inline-start: 0;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+  }
+  .formify_cloud_content h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .formify_cloud_content p br {
+    display: none;
+  }
+  .formify_cloud_box {
+    padding: 25px 20px 15px;
+  }
+  .formify_contact_box.formify_login .formify_content_right .formify_box,
+  .formify_contact_box.formify_login .formify_content_left {
+    padding: 30px 20px;
+  }
+  .formify_box_three.formify_contact_box {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+  .formify_signup_fullwidth_two .form_tab_two {
+    padding: 50px 0px;
+  }
+  .formify_signup_fullwidth_two .form_tab_two .formify_box {
+    max-width: 600px;
+  }
+  .top_logo {
+    position: relative;
+    margin-bottom: 50px;
+    padding-inline-start: 0;
+  }
+  .formify_signup_fullwidth_two .formify_left_top_logo {
+    display: block !important;
+    text-align: center;
+    height: auto;
+  }
+  .page-23 .f_content {
+    display: block !important;
+  }
+  .page-23 .formify_box.formify_countdown {
+    max-width: 500px;
+    margin-inline-start: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .f_content {
+    height: auto;
+  }
+  .formify_box {
+    padding: 30px 20px;
+  }
+  .formify_box_register_three {
+    padding: 30px 40px;
+  }
+  .img {
+    height: auto;
+  }
+  .formify_form_tab .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .formify_body {
+    height: 100vh;
+  }
+  .f_content {
+    height: auto;
+  }
+  .formify_box_three {
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+  }
+  .formify_left_fullwidth {
+    display: none;
+  }
+  .formify_right_fullwidth {
+    width: 100%;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+  .header_top {
+    position: relative;
+    padding: 10px 20px;
+  }
+  .formify_right_fullwidth .formify_content_body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .formify_box_four .container {
+    max-width: 100%;
+  }
+  .formify_box_four .formify_content_left .footer_text {
+    font-size: 14px;
+    bottom: 25px;
+  }
+  #particles-js {
+    height: 200%;
+  }
+  .formify_content_right .formify_cloud_box {
+    max-width: 100%;
+  }
+  .formify_cloud_content {
+    padding-top: 50px;
+  }
+  .formify_box_three.formify_contact_box {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .formify_signup_fullwidth .formify_content_body {
+    padding-top: 0;
+  }
+  .parallax-effect {
+    height: auto;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .formify_countdown .formify_header .form_title {
+    font-size: 29px;
+  }
+  .form_title {
+    font-size: 24px;
+  }
+  .form_footer_text {
+    font-size: 13px;
+  }
+  .signup_form .form-group:not(:first-child) {
+    margin-top: 15px;
+  }
+  .formify_box {
+    margin: 1.75rem 15px;
+  }
+  .formify_box_three {
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+  }
+  .formify_content_left .formify_box,
+  .formify_content_right .formify_box {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  .formify_header p {
+    font-size: 16px;
+  }
+  .formify_header p br {
+    display: none;
+  }
+  .header_top {
+    display: block !important;
+    text-align: center;
+  }
+  .header_top .form_footer_text {
+    text-align: center !important;
+    padding-top: 10px;
+  }
+  .formify_login .formify_content_left,
+  .formify_login .formify_content_right .formify_box {
+    padding: 30px 20px;
+  }
+  .formify_form_tab .formify_content_left,
+  .formify_form_tab .formify_content_right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .formify_signup_fullwidth_two .formify_right_fullwidth .formify_box {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .formify_box_register_three {
+    padding: 30px 20px;
+  }
+  .social_link_two {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social_link_two .btn-social {
+    margin-bottom: 5px;
+  }
+  .social_link_two .btn-social.btn-google-blue {
+    width: 100%;
+    margin-inline-end: 0;
+  }
+  .formify_box_register_three .signup_form .form-group:not(:first-child) {
+    margin-top: 15px;
+  }
+  .formify_box_four .formify_content_right .formify_box .form_title {
+    font-size: 28px;
+  }
+  .formify_cloud_content {
+    padding-top: 30px;
+  }
+  .formify_contact_box .d-flex {
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+  .formify_contact_box .item {
+    width: 100%;
+  }
+  .formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link {
+    font-size: 13px;
+  }
+  .red_btn {
+    width: 100%;
+    padding: 14px 47px;
+  }
+  .parallax_img {
+    display: none;
+  }
+}

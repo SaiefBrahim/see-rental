@@ -1,0 +1,2079 @@
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap");
+@font-face {
+  font-family: LatoMedium;
+  font-weight: 500;
+  src: url("../vendors/fonts/Lato-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: LatoSemibold;
+  font-weight: 600;
+  src: url("../vendors/fonts/Lato-Semibold.woff") format("woff");
+}
+
+/*Mixins*/
+/* Placeholder Mixins*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  color: #3c4147;
+}
+
+:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.body_wrapper {
+  overflow: hidden;
+}
+
+.custom_height {
+  height: 100%;
+}
+
+.container.custom_height {
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .frm-vh-md-100 {
+    height: 100vh;
+  }
+}
+
+.custom_container {
+  max-width: 1480px;
+}
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.formify_body {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.f_content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+@media (min-height: 767px) {
+  .f_content {
+    align-items: center;
+  }
+}
+
+.formify_content_left,
+.formify_content_right {
+  margin: 1.75rem auto;
+}
+
+.formify_content_left .formify_box,
+.formify_content_right .formify_box {
+  margin: 0px;
+}
+
+.formify_logo_wrapper p {
+  font-size: 24px;
+  line-height: 35px;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+
+@media (min-height: 600px) and (max-height: 767px) {
+  .img {
+    height: calc(100vh - 300px);
+  }
+}
+
+.formify_logo {
+  display: inline-block;
+}
+
+.formify_box {
+  background: #ffffff;
+  border: 1.2px solid #ffffff;
+  box-shadow: 0px 2px 50px rgba(56, 123, 201, 0.2);
+  border-radius: 5px;
+  margin: 1.75rem auto;
+  max-width: 580px;
+  width: 100%;
+  padding: 40px 80px;
+}
+
+.form_title {
+  font-size: 28px;
+  line-height: 1.5;
+  color: #20292f;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.or-text {
+  font-size: 18px;
+  color: #7e8592;
+  line-height: 28px;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+  display: inline-block;
+  margin: 15px 0px 10px;
+}
+
+.divider_border {
+  position: relative;
+  margin: 30px 0;
+}
+
+.divider_border:before, .divider_border:after {
+  position: absolute;
+  content: "";
+  width: 45%;
+  height: 1px;
+  top: 50%;
+  background: #eee;
+}
+
+.divider_border:before {
+  inset-inline-start: 0;
+}
+
+.divider_border:after {
+  inset-inline-end: 0;
+}
+
+.divider_border .or-text {
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.btn-social {
+  border: 0px;
+  font-size: 16px;
+  color: #353535;
+  background: #e2f6f2;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+  width: 100%;
+  padding: 15px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-social:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.5s linear;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: transform;
+  z-index: -1;
+}
+
+.btn-social .icon {
+  margin-inline-end: 8px;
+  font-size: 23px;
+}
+
+.btn-social:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-social:hover {
+  color: #fff;
+}
+
+.btn-social:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.btn-google:hover {
+  color: #353535;
+}
+
+.btn-google-red {
+  background: #dd4b39;
+  color: #fff;
+}
+
+.btn-twitter {
+  background: #3b5998;
+  color: #fff;
+}
+
+.input_title {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+  color: #20292f;
+}
+
+.signup_form .form-group {
+  position: relative;
+}
+
+.signup_form .form-group:not(:first-child) {
+  margin-top: 24px;
+}
+
+.signup_form .form-group .form-control {
+  background: #f5f6f7;
+  border: 1px solid #e8eae9;
+  border-radius: 5px;
+  height: 55px;
+  line-height: 55px;
+  padding: 0px;
+  padding-inline-start: 20px;
+  font-size: 16px;
+  color: #20292f;
+  box-shadow: none;
+  z-index: 2;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.signup_form .form-group .form-control.placeholder {
+  color: #9a9a9a;
+}
+
+.signup_form .form-group .form-control:-moz-placeholder {
+  color: #9a9a9a;
+}
+
+.signup_form .form-group .form-control::-moz-placeholder {
+  color: #9a9a9a;
+}
+
+.signup_form .form-group .form-control::-webkit-input-placeholder {
+  color: #9a9a9a;
+}
+
+.signup_form .form-group .form-control:focus {
+  outline: none;
+  box-shadow: 0 10px 10px rgba(0, 123, 255, 0.09);
+}
+
+.signup_form .form-group .top_text {
+  background: #fff;
+  position: absolute;
+  bottom: 15px;
+  color: #9ba5a0;
+  font-size: 16px;
+  font-weight: 400;
+  inset-inline-start: 14px;
+  overflow: hidden;
+  padding: 0 8px;
+  text-overflow: ellipsis;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  width: auto;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+.signup_form.border-radius-0 .form-group .form-control,
+.signup_form.border-radius-0 .form-group .thm_btn {
+  border-radius: 0px;
+}
+
+.form_footer_text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #20292f;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.form_footer_text a {
+  color: #0073ec;
+}
+
+.thm_btn {
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  background: #0073ec;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 14px 53px;
+  box-shadow: none;
+  transition: all 0.2s linear;
+  margin-top: 5px;
+}
+
+.thm_btn:focus, .thm_btn:hover {
+  outline: none;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 11px rgba(241, 103, 67, 0.46);
+}
+
+/*========= signup_form_style_two css =======*/
+.signup_form_style_two .form-group .form-control {
+  background: transparent;
+}
+
+.signup_form_style_two .form-group .form-control:focus, .signup_form_style_two .form-group .form-control.animated {
+  border-color: #039f67;
+  box-shadow: none;
+}
+
+.signup_form_style_two .form-group .form-control:focus + .top_text, .signup_form_style_two .form-group .form-control.animated + .top_text {
+  transform: scale(0.85) translateY(-34px);
+  inset-inline-start: 13px;
+  z-index: 2;
+}
+
+.signup_form_style_two .form-group .thm_btn_green {
+  display: inline-block;
+  width: auto;
+  background: #039f67;
+}
+
+.signup_form_style_two .form-group .thm_btn_green:hover {
+  box-shadow: 0 4px 11px rgba(3, 159, 103, 0.35);
+}
+
+/*========== formify_box_register css ========*/
+.formify_box_register {
+  max-width: 600px;
+  padding: 60px;
+}
+
+.formify_box_register .formify_header {
+  margin-bottom: 30px;
+}
+
+.formify_box_register .formify_header .form_title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.formify_box_register .btn-social {
+  border-radius: 0px;
+  padding: 17px 0px;
+}
+
+.formify_box_register .btn-social + .btn-social {
+  margin-top: 20px;
+}
+
+.formify_box_register .divider_border:before, .formify_box_register .divider_border:after {
+  background: #c4c4c4;
+}
+
+.formify_box_register .signup_form .form-group .form-control {
+  background: #f7f8f9;
+  border: 1px solid #c4c4c4;
+  height: 60px;
+  line-height: 60px;
+}
+
+.formify_box_register .signup_form .form-group .form-control.placeholder {
+  color: #9a9a9a;
+}
+
+.formify_box_register .signup_form .form-group .form-control:-moz-placeholder {
+  color: #9a9a9a;
+}
+
+.formify_box_register .signup_form .form-group .form-control::-moz-placeholder {
+  color: #9a9a9a;
+}
+
+.formify_box_register .signup_form .form-group .form-control::-webkit-input-placeholder {
+  color: #9a9a9a;
+}
+
+.formify_box_register .signup_form .form-group .thm_btn {
+  padding: 16px 53px;
+  line-height: 26px;
+}
+
+.formify_box_register .form_footer_text {
+  color: #7e8592;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+}
+
+/*========== formify_box_register css ========*/
+/*========= background_transparent css ========*/
+.background_transparent {
+  background: rgba(0, 0, 0, 0.72);
+  border: 0px;
+  border-radius: 0px;
+}
+
+.background_transparent .formify_header .form_title {
+  color: #fff;
+}
+
+.background_transparent .divider_border:before, .background_transparent .divider_border:after {
+  background: #fff;
+}
+
+.background_transparent .divider_border .or-text {
+  color: #fff;
+}
+
+.background_transparent .input_title {
+  color: #fff;
+}
+
+.background_transparent .signup_form .form-group .form-control {
+  background: transparent;
+}
+
+/*========= background_transparent css ========*/
+/*========= formify_box_checkbox css ========*/
+.formify_box_checkbox {
+  max-width: 600px;
+  padding: 60px;
+  box-shadow: none;
+}
+
+.formify_box_checkbox .formify_header {
+  margin-bottom: 40px;
+}
+
+.formify_box_checkbox .formify_header .form_title {
+  font-size: 30px;
+}
+
+.formify_box_checkbox .formify_header p {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.formify_box_checkbox .formify_header .border {
+  width: 100px;
+  height: 1px;
+  background: #fff;
+  border: 0px !important;
+  display: block;
+  margin: 0 auto;
+}
+
+.formify_box_checkbox h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "LatoMedium", sans-serif;
+  margin-bottom: 15px;
+}
+
+.formify_box_checkbox .box_info {
+  grid-template-columns: auto;
+}
+
+.formify_box_checkbox .box_info .form-check {
+  color: #fff;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+}
+
+.formify_box_checkbox .box_info .form-check input[type="checkbox"] {
+  background: transparent;
+}
+
+.formify_box_checkbox .box_info .form-check input[type="checkbox"]:before {
+  background-color: #000;
+  border-color: #0073ec;
+}
+
+.formify_box_checkbox .box_info .form-check input[type="checkbox"]:checked:before {
+  border-color: #fff;
+}
+
+.formify_box_checkbox .box_info .form-check input[type="checkbox"]:checked:after {
+  background: #fff;
+}
+
+.formify_box_checkbox .next_tab {
+  border-radius: 0px;
+  margin-top: 40px;
+}
+
+.formify_box_checkbox .number {
+  color: #ff7070;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+.formify_box_checkbox .form_tab {
+  border: 0px;
+  margin-bottom: 0;
+  margin-top: 34px;
+}
+
+.formify_box_checkbox .form_tab .nav-item {
+  width: calc(100% / 3);
+  margin-bottom: 0;
+}
+
+.formify_box_checkbox .form_tab .nav-item .nav-link {
+  padding: 0px;
+  border-bottom: 3px solid rgba(0, 85, 251, 0.4);
+  display: block;
+  background: transparent;
+}
+
+.formify_box_checkbox .form_tab .nav-item .nav-link:before {
+  height: 3px;
+  bottom: -3px;
+}
+
+.formify_box_checkbox .form_tab .nav-item .nav-link.complete:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.formify_box_checkbox .tab-content {
+  min-height: 242px;
+}
+
+.formify_box_checkbox.background-white .formify_header {
+  margin-bottom: 20px;
+}
+
+.formify_box_checkbox.background-white .formify_header .form_title {
+  margin-bottom: 10px;
+}
+
+.formify_box_checkbox.background-white .formify_header p {
+  color: #0f2427;
+}
+
+.formify_box_checkbox.background-white .formify_header .border {
+  background: #0f2427;
+}
+
+.formify_box_checkbox.background-white .signup_form .form-group {
+  margin-top: 10px !important;
+}
+
+.formify_box_checkbox.background-white h6,
+.formify_box_checkbox.background-white .box_info .form-check {
+  color: #0f2427;
+}
+
+.formify_box_checkbox.background-white .box_info .form-check label:before {
+  border-color: #0073ec;
+}
+
+/*========= formify_box_checkbox css ========*/
+/*========= formify_cloud_content css ========*/
+.formify_cloud_content h2,
+.formify_cloud_content p {
+  color: #fff;
+}
+
+.formify_cloud_content h2 {
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+.formify_cloud_content p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "LatoMedium", sans-serif;
+  margin-bottom: 25px;
+}
+
+.cloud_list li {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "LatoMedium", sans-serif;
+  color: #fff;
+  position: relative;
+  padding-inline-start: 30px;
+  margin-bottom: 10px;
+}
+
+.cloud_list li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 900;
+  inset-inline-start: 0;
+  top: 0;
+}
+
+.formify_content_right .formify_cloud_box {
+  margin-inline-end: 0;
+  margin-inline-start: auto;
+}
+
+.formify_cloud_box {
+  max-width: 490px;
+  padding: 40px 30px 30px;
+}
+
+.formify_cloud_box .signup_form .form-group {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.formify_cloud_box .signup_form .form-group .form-control {
+  background: transparent;
+  border-color: #dbe0df;
+}
+
+.formify_cloud_box .signup_form .form-group .form-control.placeholder {
+  color: #bdc4c0;
+}
+
+.formify_cloud_box .signup_form .form-group .form-control:-moz-placeholder {
+  color: #bdc4c0;
+}
+
+.formify_cloud_box .signup_form .form-group .form-control::-moz-placeholder {
+  color: #bdc4c0;
+}
+
+.formify_cloud_box .signup_form .form-group .form-control::-webkit-input-placeholder {
+  color: #bdc4c0;
+}
+
+.formify_cloud_box .signup_form .form-group textarea.form-control {
+  height: 92px;
+}
+
+.green_btn {
+  background: #15cd72;
+  text-transform: capitalize;
+}
+
+.green_btn:hover {
+  box-shadow: 0 4px 11px rgba(21, 205, 114, 0.3);
+}
+
+.next_button {
+  margin-top: 20px;
+}
+
+#particles-js {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.top_logo {
+  position: absolute;
+  top: 30px;
+  inset-inline-start: 0px;
+  padding-inline-start: 50px;
+  display: block;
+}
+
+/*========= formify_cloud_content css ========*/
+.parallax_img .p_img {
+  position: absolute;
+}
+
+.parallax_img .p_img.one {
+  inset-inline-start: 200px;
+  bottom: 180px;
+}
+
+@media (max-width: 1366px) {
+  .parallax_img .p_img.one {
+    inset-inline-start: 100px;
+    bottom: 100px;
+  }
+}
+
+.parallax_img .p_img.two {
+  inset-inline-end: 460px;
+}
+
+@media (max-width: 1366px) {
+  .parallax_img .p_img.two {
+    inset-inline-end: 200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .parallax_img .p_img.two {
+    inset-inline-end: 100px;
+  }
+}
+
+.parallax_img .p_img.three {
+  inset-inline-end: 550px;
+  top: 320px;
+}
+
+@media (max-width: 1366px) {
+  .parallax_img .p_img.three {
+    inset-inline-end: 300px;
+    top: 280px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .parallax_img .p_img.three {
+    inset-inline-end: 100px;
+    top: 200px;
+  }
+}
+
+.parallax_img .p_img.four {
+  inset-inline-end: 600px;
+  bottom: 220px;
+}
+
+@media (max-width: 1199px) {
+  .parallax_img .p_img.four {
+    inset-inline-end: 100px;
+    bottom: 200px;
+  }
+}
+
+.parallax_img .p_img.five {
+  inset-inline-end: 200px;
+  top: 150px;
+}
+
+@media (max-width: 1199px) {
+  .parallax_img .p_img.five {
+    top: 100px;
+  }
+}
+
+.parallax_img .p_img.six {
+  inset-inline-end: 250px;
+  bottom: 300px;
+}
+
+@media (max-width: 1199px) {
+  .parallax_img .p_img.six {
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .parallax_img .p_img.six {
+    bottom: 10px;
+  }
+}
+
+.formify_countdown .logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1440px) {
+  .formify_countdown .logo {
+    margin-bottom: 20px;
+  }
+}
+
+.formify_countdown .formify_header {
+  margin-bottom: 55px;
+}
+
+@media (max-width: 1440px) {
+  .formify_countdown .formify_header {
+    margin-bottom: 40px;
+  }
+}
+
+.formify_countdown .formify_header .form_title {
+  font-size: 48px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.formify_countdown .countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1440px) {
+  .formify_countdown .countdown {
+    margin-bottom: 20px;
+  }
+}
+
+.formify_countdown .countdown .countdown-container {
+  margin: 0px 10px;
+}
+
+@media (max-width: 576px) {
+  .formify_countdown .countdown .countdown-container {
+    margin: 5px;
+  }
+}
+
+.formify_countdown .countdown .countdown-container .countdown-value {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 18px 20px;
+  background: #eeeeee;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  color: #09243f;
+}
+
+@media (max-width: 576px) {
+  .formify_countdown .countdown .countdown-container .countdown-value {
+    padding: 5px 10px;
+  }
+}
+
+.formify_countdown .countdown .countdown-container .countdown-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: #777777;
+}
+
+.formify_countdown p {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.formify_countdown .page_22 .countdown {
+  justify-content: left;
+}
+
+.p-24-width .formify_countdown .countdown .countdown-container .countdown-value {
+  background: transparent;
+  color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.p-24-width .formify_countdown .countdown .countdown-container .countdown-heading {
+  color: #fff;
+}
+
+.p-24-width .page-27 .formify_countdown .countdown .countdown-container .countdown-value {
+  color: #242424;
+}
+
+.p-24-width .page-27 .formify_countdown .countdown .countdown-container .countdown-heading {
+  color: #242424;
+}
+
+.page-25 .formify_countdown .formify_header .form_title {
+  background: -webkit-linear-gradient(45deg, #f02e66, #3326f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.subcribes {
+  background: #ffffff;
+  border: 1px solid #f1f2f4;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(1, 9, 26, 0.05);
+  border-radius: 3px;
+  padding: 6px;
+}
+
+.subcribes .form-control {
+  border: 0px;
+  height: auto;
+  padding: 8px 30px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #999;
+  box-shadow: none;
+}
+
+.subcribes .form-control.placeholder {
+  color: #999;
+}
+
+.subcribes .form-control:-moz-placeholder {
+  color: #999;
+}
+
+.subcribes .form-control::-moz-placeholder {
+  color: #999;
+}
+
+.subcribes .form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.subcribes .form-control:focus {
+  outline: none;
+}
+
+.subcribes .thm_btn {
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background: #0073ec;
+  display: inline-block;
+  width: auto;
+  margin-top: 0px;
+  text-transform: capitalize;
+}
+
+.page-25 .subcribes {
+  border-radius: 100px;
+}
+
+.page-25 .subcribes .thm_btn {
+  background: linear-gradient(271.14deg, #ef2e67 -12.94%, #787eef 118.65%);
+  border: none;
+  border-radius: 100px;
+}
+
+.page-26 .subcribes {
+  position: relative;
+  border-radius: 35px;
+}
+
+.page-26 .subcribes .form-control {
+  margin: 1px;
+}
+
+.page-26 .subcribes .thm_btn {
+  border-radius: 100px;
+  padding: 9px 15px;
+}
+
+.p-22-img-col {
+  position: relative;
+}
+
+.page-28 .formify_countdown .formify_header .form_title {
+  background: -webkit-linear-gradient(45deg, #f02e66, #3326f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.page-28 .subcribes {
+  border-radius: 100px;
+}
+
+.page-28 .subcribes .thm_btn {
+  background: -webkit-linear-gradient(45deg, #f02e66, #3326f9);
+  border: none;
+  border-radius: 100px;
+}
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*============ formify_box two css ============*/
+.overlay_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  inset-inline-start: 0;
+  z-index: -2;
+}
+
+.formify_box_two {
+  max-width: 710px;
+  padding: 55px 100px 70px;
+}
+
+.formify_box_two .signup_form .form-group .form-control {
+  border-radius: 45px;
+  background: #f3f7f9;
+  border-color: #dbe0df;
+  padding-inline-start: 30px;
+  height: 60px;
+}
+
+.formify_box_two .btn-social {
+  border-radius: 45px;
+}
+
+.formify_box_two .condition_text {
+  font-size: 15px;
+  color: #3e3e3e;
+  font-weight: 400;
+  margin: 25px 0px 20px;
+}
+
+.formify_box_two .btn-social {
+  padding: 18px 0px;
+}
+
+.formify_box_two .btn-email {
+  background: #ea4c89;
+  color: #fff;
+}
+
+.checkbox_input {
+  position: relative;
+  padding-inline-start: 30px;
+  cursor: pointer;
+}
+
+.checkbox_input:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d0d5d8;
+  top: 1px;
+  inset-inline-start: 0;
+  border-radius: 3px;
+}
+
+.checkbox_input:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 14px;
+  border: solid #0073ec;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  inset-inline-start: 7px;
+  opacity: 0;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox input:checked + label:before {
+  border-color: #0073ec;
+}
+
+.checkbox input:checked + label:after {
+  opacity: 1;
+}
+
+.formify_header {
+  margin-bottom: 35px;
+}
+
+.formify_header .form_title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.formify_header p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #6d7c90;
+  font-weight: 400;
+}
+
+/*============ formify_signup_fullwidth ============*/
+.formify_left_fullwidth {
+  flex: 0 0 auto;
+  width: 32.75%;
+}
+
+.formify_right_fullwidth {
+  flex: 0 0 auto;
+  width: 67.25%;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.formify_right_fullwidth .form_title {
+  font-size: 30px;
+  margin-bottom: 34px;
+}
+
+.formify_right_fullwidth .formify_content_body {
+  width: 480px;
+  margin-inline-start: -80px;
+}
+
+.header_top {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  padding: 40px 140px 40px 30px;
+  z-index: 10;
+  width: 100%;
+}
+
+.header_top .form_footer_text {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #647278;
+  font-size: 16px;
+}
+
+.header_top .form_footer_text a {
+  color: #039f67;
+}
+
+/*============== formify_box_three  css ============*/
+.formify_box_three {
+  max-width: 1032px;
+  width: 100%;
+  margin: 2.5rem auto;
+  background: #fafbfc;
+  box-shadow: 0px 4px 70px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+.formify_login .formify_content_left {
+  margin: 0px;
+  padding: 55px;
+}
+
+.formify_login .formify_content_left .formify_logo_wrapper p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #afb0bb;
+}
+
+.formify_login .formify_content_left .img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-height: 600px) and (max-height: 700px) {
+  .formify_login .formify_content_left .img {
+    height: calc(100vh - 370px);
+  }
+}
+
+.formify_login .formify_content_left .img_two {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-height: 600px) and (max-height: 780px) {
+  .formify_login .formify_content_left .img_two {
+    height: auto;
+  }
+}
+
+.formify_login .formify_content_right {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.formify_login .formify_content_right .formify_box {
+  box-shadow: none;
+  padding: 55px;
+  width: 100%;
+  overflow-y: auto;
+  min-height: 450px;
+}
+
+.formify_login .formify_content_right .formify_box h6 {
+  color: #aeafb6;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+  text-transform: uppercase;
+}
+
+.formify_login .formify_content_right .formify_box .form_title {
+  margin-bottom: 30px;
+}
+
+.formify_login .formify_content_right .signup_form .form-group .form-control {
+  background: transparent;
+}
+
+.formify_login .formify_content_right .signup_form .form-group .input {
+  position: relative;
+}
+
+.formify_login .formify_content_right .signup_form .form-group .input_icon {
+  position: absolute;
+  inset-inline-end: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.formify_login .formify_content_right .signup_form .form_footer_text {
+  color: #7e8592;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "LatoMedium", sans-serif;
+  margin-bottom: 0;
+}
+
+.text-transform-inherit {
+  text-transform: inherit;
+}
+
+/*============== formify_box_three  css ============*/
+/*============== formify_login_two  css ============*/
+.formify_login_two .formify_content_right .signup_form .form-group .form-control {
+  background: #f3f7f9;
+  border-color: #f3f7f9;
+}
+
+/*============== formify_login_two  css ============*/
+/*============== formify_form_tab  css ============*/
+.formify_form_tab {
+  max-width: 1140px;
+}
+
+.formify_form_tab .formify_content_left {
+  flex: 0 0 53%;
+  max-width: 53%;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+
+.formify_form_tab .formify_content_right {
+  flex: 0 0 47%;
+  max-width: 47%;
+}
+
+.formify_form_tab .btn-google {
+  background: transparent;
+  border: 1px solid #dddfe5;
+}
+
+.formify_form_tab .btn-google::before {
+  background: #e2f6f2;
+}
+
+.formify_form_tab .btn-google:hover {
+  border-color: #e2f6f2;
+}
+
+.formify_form_tab .signup_form_style_two .form-group .form-control:focus,
+.formify_form_tab .signup_form_style_two .form-group .form-control.animated {
+  border-color: #0073ec;
+}
+
+.formify_form_tab .tab-content {
+  min-height: 415px;
+}
+
+.form_tab {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.form_tab .nav-item {
+  display: inline-block;
+  width: 50%;
+}
+
+.form_tab .nav-item .nav-link {
+  padding: 0px 0px 14px;
+  font-size: 16px;
+  color: #9ea3a8;
+  font-weight: 500;
+  font-family: "LatoMedium", sans-serif;
+  border-radius: 0px;
+  border: 0px;
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid #dfe0e2;
+  position: relative;
+}
+
+.form_tab .nav-item .nav-link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #0055fb;
+  bottom: -0.5px;
+  position: absolute;
+  inset-inline-start: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.5s linear;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: transform;
+}
+
+.form_tab .nav-item .nav-link.active {
+  color: #0073ec;
+}
+
+.form_tab .nav-item .nav-link.active:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/*============== formify_form_tab  css ============*/
+/*============== formify_signup_fullwidth_two  css ============*/
+.formify_signup_fullwidth_two .formify_left_fullwidth {
+  width: 44.2%;
+}
+
+.formify_signup_fullwidth_two .formify_right_fullwidth {
+  width: 55.8%;
+}
+
+.formify_signup_fullwidth_two .formify_right_fullwidth .formify_box {
+  box-shadow: none;
+  padding: 40px 30px 30px;
+}
+
+.formify_signup_fullwidth_two .formify_right_fullwidth .formify_box .btn-google {
+  background: #f7f8f9;
+  border: 1px solid #dee0e2;
+}
+
+.formify_signup_fullwidth_two .formify_right_fullwidth .formify_box .signup_form .form-group {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.formify_signup_fullwidth_two .formify_right_fullwidth .formify_box .signup_form .form-group .form-control {
+  background: #f7f8f9;
+  border-color: #e1e5e8;
+}
+
+.formify_signup_fullwidth_two .formify_right_fullwidth .formify_box .signup_form .form-group .thm_btn {
+  display: inline-block;
+  width: auto;
+}
+
+.formify_signup_fullwidth_two .formify_right_fullwidth .formify_box .condition_text {
+  margin-top: 28px;
+}
+
+/*============== formify_signup_fullwidth_two  css ============*/
+/*============== formify_box_four  css ============*/
+@media (min-width: 1440px) {
+  .formify_box_four {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .formify_box_four .container {
+    max-width: 100%;
+  }
+}
+
+.formify_box_four .formify_content_left {
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+}
+
+.formify_box_four .formify_content_left .overlay_bg {
+  position: absolute;
+}
+
+.formify_box_four .formify_content_left .content {
+  color: #fff;
+  padding: 100px 60px 0;
+}
+
+.formify_box_four .formify_content_left .content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+  margin-bottom: 15px;
+}
+
+.formify_box_four .formify_content_left .content h3 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.formify_box_four .formify_content_left .content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.formify_box_four .formify_content_left .content .thm_btn {
+  width: auto;
+  border-radius: 0px;
+  background: #353cee;
+  margin-top: 30px;
+}
+
+.formify_box_four .formify_content_left .footer_text {
+  position: absolute;
+  bottom: 50px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+  color: #d1d2d7;
+  text-transform: uppercase;
+  text-align: center;
+  inset-inline-start: 0;
+}
+
+.formify_box_four .formify_content_right .formify_box {
+  max-width: 720px;
+  padding: 140px 0px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.formify_box_four .formify_content_right .formify_box h6 {
+  color: #ff7070;
+  font-size: 16px;
+}
+
+.formify_box_four .formify_content_right .formify_box .form_title {
+  font-size: 30px;
+}
+
+.formify_box_four .formify_content_right .formify_box .signup_form .form-group {
+  margin-top: 0;
+}
+
+.formify_box_four .formify_content_right .formify_box .signup_form .form-group:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.formify_box_four .formify_content_right .formify_box .signup_form .form-group h6 {
+  color: #0d0d0d;
+  text-transform: inherit;
+}
+
+.formify_box_four .formify_content_right .formify_box .signup_form .form-group .form-control {
+  border-radius: 0px;
+  border-color: #000;
+  background: #f7f8f9;
+  height: 60px;
+  line-height: 60px;
+}
+
+.formify_box_four .formify_content_right .formify_box .signup_form .form-group .form-control:focus {
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.25);
+}
+
+.formify_box_four .formify_content_right .formify_box .signup_form .form-group textarea.form-control {
+  height: 165px;
+}
+
+.formify_box_four .formify_content_right .formify_box .thm_btn {
+  display: inline-block;
+  width: auto;
+  border-radius: 0px;
+  background: #000;
+  font-size: 18px;
+  font-family: "LatoSemibold", sans-serif;
+  font-weight: 600;
+  padding: 16px 97px;
+}
+
+.formify_box_four .formify_content_right .formify_box .thm_btn:hover {
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.35);
+}
+
+.niceselect {
+  display: block;
+  float: none;
+  border: 1px solid #000;
+  border-radius: 0px;
+  line-height: 60px;
+  height: 60px;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.niceselect:after {
+  width: 8px;
+  height: 8px;
+  border-color: #000;
+}
+
+.niceselect .list {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.quote_text {
+  position: absolute;
+  bottom: 120px;
+}
+
+.quote_text i {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.quote_text p {
+  color: #d1d2d7;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 500;
+  font-family: "LatoMedium", sans-serif;
+  margin-bottom: 35px;
+}
+
+.quote_text .author {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quote_text .position {
+  color: #d1d2d7;
+  font-size: 16px;
+}
+
+.box_info {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 360px;
+}
+
+.box_info .form-check {
+  font-size: 16px;
+  color: #3e3e3e;
+  font-weight: 500;
+  font-family: "LatoMedium", sans-serif;
+  padding-inline-start: 0;
+  margin: 7px 0px;
+}
+
+.box_info .form-check input[type="checkbox"] {
+  display: none;
+}
+
+.box_info .form-check input[type="checkbox"]:checked + label:before {
+  border-color: #0073ec;
+}
+
+.box_info .form-check input[type="checkbox"]:checked + label:after {
+  transform: scale(1.5);
+}
+
+.box_info .form-check label {
+  position: relative;
+  padding-inline-start: 30px;
+}
+
+.box_info .form-check label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #6b707f;
+  border-radius: 50%;
+  top: 0;
+  inset-inline-start: 0;
+  background-color: transparent;
+  transition: all 0.2s linear;
+}
+
+.box_info .form-check label:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0073ec;
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 0;
+  margin-inline-start: 8px;
+  margin-top: -4px;
+  transform: scale(0);
+  transition: all 0.2s linear;
+}
+
+/*============== formify_box_four  css ============*/
+/*========= formify_contact_box css ========*/
+.formify_contact_box {
+  max-width: 1000px;
+}
+
+.formify_contact_box.formify_login .formify_content_right .formify_box,
+.formify_contact_box.formify_login .formify_content_left {
+  padding: 40px 50px;
+}
+
+.formify_contact_box .signup_form .form-group .form-control {
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid #e6eae8;
+  padding-inline-start: 0;
+  height: 40px;
+  padding-bottom: 10px;
+  padding-top: 0;
+  line-height: inherit;
+}
+
+.formify_contact_box .signup_form .form-group .form-control.placeholder {
+  color: #bdc4c0;
+}
+
+.formify_contact_box .signup_form .form-group .form-control:-moz-placeholder {
+  color: #bdc4c0;
+}
+
+.formify_contact_box .signup_form .form-group .form-control::-moz-placeholder {
+  color: #bdc4c0;
+}
+
+.formify_contact_box .signup_form .form-group .form-control::-webkit-input-placeholder {
+  color: #bdc4c0;
+}
+
+.formify_contact_box .signup_form .form-group .form-control:focus {
+  border-color: #039f67;
+}
+
+.formify_contact_box .signup_form .form-group .top_text {
+  position: relative;
+  bottom: 0;
+  inset-inline-start: 0;
+  padding-inline-start: 0;
+  font-size: 14px;
+  color: #1c201e;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+}
+
+.formify_contact_box .signup_form .form-group .top_text.animated {
+  color: #039f67;
+}
+
+.formify_contact_box .signup_form .form-group textarea {
+  margin-top: 50px;
+}
+
+.formify_contact_box .item {
+  width: 50%;
+  padding-inline-end: 20px;
+  padding-bottom: 5px;
+}
+
+.formify_contact_box .item p,
+.formify_contact_box .item a {
+  font-size: 15px;
+  line-height: 24px;
+  color: #48504d;
+}
+
+.formify_contact_box .item h6 {
+  color: #039f67;
+}
+
+.red_btn {
+  width: auto;
+  text-transform: capitalize;
+  background: #f7345e;
+}
+
+.red_btn i {
+  font-size: 20px;
+  vertical-align: middle;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+
+.red_btn:hover {
+  box-shadow: 0 4px 11px rgba(247, 52, 94, 0.3);
+}
+
+.red_btn:hover i {
+  transform: translateX(8px);
+}
+
+/*========= formify_contact_box css ========*/
+/*========= formify_contact_box css ========*/
+.formify_signup_fullwidth_two {
+  z-index: inherit;
+}
+
+.formify_signup_fullwidth_two .form_tab_two {
+  position: relative;
+  z-index: 50;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0px;
+  max-width: 650px;
+  margin-bottom: 45px;
+  overflow: hidden;
+  position: relative;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li {
+  margin-bottom: 0;
+  width: auto;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link {
+  font-size: 15px;
+  color: #b0b9c1;
+  font-weight: 600;
+  font-family: "LatoSemibold", sans-serif;
+  text-align: center;
+  border: 0px;
+  padding-bottom: 0;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link:before {
+  bottom: auto;
+  top: 13px;
+  height: 2px;
+  inset-inline-end: 50%;
+  inset-inline-start: auto;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  background: #e8ecf1;
+  height: 2px;
+  top: 13px;
+  inset-inline-end: 58%;
+  transition: all 0.3s linear;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link span {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e1e5ea;
+  color: #b0b9c1;
+  background: #fff;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  line-height: 28px;
+  position: relative;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  z-index: 3;
+  transition: all 0.4s linear;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link.active, .formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link.complete {
+  color: #20292f;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link.active:before, .formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link.complete:before {
+  z-index: 1;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link.active span, .formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link.complete span {
+  border-color: #0055fb;
+  color: #0055fb;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .form_tab li .nav-link.complete:after {
+  background: #0055fb;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box {
+  max-width: 650px;
+  margin-top: 0;
+  padding: 0px;
+  margin-bottom: 0;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .form_title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #20292f;
+  margin-bottom: 15px;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .form_title span {
+  color: #0055fb;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group {
+  margin-top: 20px;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group .form-control {
+  height: 45px;
+  line-height: 45px;
+  background: #f0f4f8;
+  border-color: #f0f4f8;
+  font-size: 15px;
+  border-radius: 3px;
+  padding-inline-start: 15px;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group .form-control.placeholder {
+  color: #a4b0ba;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group .form-control:-moz-placeholder {
+  color: #a4b0ba;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group .form-control::-moz-placeholder {
+  color: #a4b0ba;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group .form-control::-webkit-input-placeholder {
+  color: #a4b0ba;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group .niceselect {
+  height: 45px;
+  line-height: 45px;
+  background: #f0f4f8;
+  border-color: #f0f4f8;
+  font-size: 15px;
+  padding-inline-start: 15px;
+}
+
+.formify_signup_fullwidth_two .form_tab_two .formify_box .signup_form .form-group .niceselect:after {
+  border-color: #0055fb;
+  inset-inline-end: 18px;
+  margin-top: -5px;
+}
+
+.prev_tab {
+  font-size: 16px;
+  font-family: "LatoMedium", sans-serif;
+  font-weight: 500;
+  color: #6b7571;
+}
+
+.prev_tab i {
+  font-size: 20px;
+  margin-inline-end: 5px;
+  vertical-align: middle;
+  transition: all 0.2s linear;
+}
+
+.prev_tab:hover {
+  color: #f7345e;
+}
+
+.prev_tab:hover i {
+  margin-inline-end: 8px;
+}
+
+/*========= formify_contact_box css ========*/
+.formify_box_register_three .divider_border {
+  margin-bottom: 20px;
+}
+
+.formify_box_register_three .formify_header {
+  margin-bottom: 20px;
+}
+
+.formify_box_register_three .signup_form .form-group .form-control {
+  background: transparent;
+  height: 50px;
+  line-height: 50px;
+}
+
+.formify_box_register_three .signup_form .form-group:not(:first-child) {
+  margin-top: 19px;
+}
+
+.formify_box_register_three .thm_btn {
+  background: #ea4c89;
+  box-shadow: 0 4px 11px rgba(234, 76, 137, 0.3);
+  margin-top: 0;
+  padding: 12px 53px;
+}
+
+.formify_box_register_three .form_footer_text {
+  color: #7e8592;
+  font-weight: 500;
+  font-family: "LatoMedium", sans-serif;
+}
+
+.formify_box_register_three .form_footer_text a {
+  color: #228699;
+}
+
+.social_link_two .btn-social {
+  width: auto;
+  background: #f2f2f2;
+  color: #757575;
+  padding: 11px 32px;
+  margin-inline-end: 10px;
+  transition: all 0.2s linear;
+}
+
+.social_link_two .btn-social i {
+  margin-inline-end: 0;
+}
+
+.social_link_two .btn-social.btn-google-blue {
+  background: #4285f4;
+  color: #fff;
+}
+
+.social_link_two .btn-social:last-child {
+  margin-inline-end: 0;
+}
+
+.social_link_two .btn-social:hover {
+  background: #4285f4;
+  color: #fff;
+}
+
+.btn-google-blue {
+  background: #4285f4;
+  color: #fff;
+}
+
+.p-22-img-col {
+  position: relative;
+}
+
+.p-22-img-col .page-22-img {
+  width: 960px;
+  position: absolute;
+  inset-inline-start: 0;
+  top: 20%;
+}
+
+@media (max-width: 1440px) {
+  .p-22-img-col .page-22-img {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.page-23 {
+  justify-content: center;
+}
+
+.page-23 .formify_right_fullwidth {
+  width: 48%;
+}
+
+.page-23 .formify_left_fullwidth {
+  width: 52%;
+}
+
+.page-23 .formify_box.formify_countdown {
+  background: #ffeff9;
+  border: none;
+  padding: 0px;
+  margin-inline-start: 0;
+}
+
+.page-23 h4 {
+  color: #f16743;
+}
+
+.page-23 .subcribes {
+  max-width: 470px;
+}
+
+.page-23 .subcribes .thm_btn {
+  background: #f16743;
+}
+
+.page-23 .f_content {
+  max-width: 1260px;
+}
+
+.p-24-width .formify_signup_fullwidth_two .formify_right_fullwidth {
+  width: 100%;
+}
+
+.p-24-width .formify_box.formify_countdown {
+  background: transparent;
+  border: none;
+}
+
+.p-24-width h4 {
+  color: #fff;
+}
+
+.p-24-width p {
+  color: #fff;
+}
+
+.p-24-width .page-27 {
+  position: relative;
+}
+
+.p-24-width .page-27 h4 {
+  color: #242424;
+}
+
+.p-24-width .page-27 p {
+  color: #696969;
+}
+
+.p-24-width .page-27 .subcribes .thm_btn {
+  background: #f16743;
+}
+
+.p-24-width .page-27 .shape-imgs .shape {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+}
+
+.p-24-width .page-27 .shape-imgs .shape-2 {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+}
+
+.p-24-width .formify_countdown .formify_header {
+  margin-bottom: 25px;
+}
+
+/*---------------------------------------------------- */
+/*# sourceMappingURL=style.css.map */

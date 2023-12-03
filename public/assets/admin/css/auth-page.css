@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+    .hide-div-auth {
+        visibility: hidden;
+        display: none;
+    }
+    .show-div-auth {
+        visibility: visible;
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) {
+    .show-div-auth {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.bg-one-auth{
+    background-color: #F7F7F7
+}
+.h-one-auth{
+    font-size: 50px; margin-top:30px;
+}
+.h-two-auth{
+    font-size: 20px;
+}
+.div-one-auth{
+    border-inline-end:2px solid rgb(85, 84, 84)
+}
+.h-three-auth{
+    font-size: 50px; margin-top:30px;
+}
+.h-four-auth{
+    font-size: 20px;
+}
